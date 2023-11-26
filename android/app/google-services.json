@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "685604832151-c52vfmqnsvr7r4n564de4fvjpp6r9939.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chalo_milte_hai",
+            "certificate_hash": "b0bb5d68c8a35fd4d81e0c768562ef0baac20224"
+          }
+        },
+        {
           "client_id": "685604832151-3fgtciqmib83inu8352r202d17dsaddu.apps.googleusercontent.com",
           "client_type": 3
         }
