@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "685604832151",
+    "project_id": "unitymeet-3f19b",
+    "storage_bucket": "unitymeet-3f19b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685604832151:android:3aca2bb7fc74a3f705bad2",
+        "android_client_info": {
+          "package_name": "com.example.chalo_milte_hai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685604832151-3fgtciqmib83inu8352r202d17dsaddu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKZPLTk2HxbiFEly_zwiUoXEaLxruyeYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685604832151-3fgtciqmib83inu8352r202d17dsaddu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
