@@ -1,3 +1,4 @@
+import 'package:chalo_milte_hai/resources/auth_method.dart';
 import 'package:chalo_milte_hai/screens/home_screen.dart';
 import 'package:chalo_milte_hai/screens/login_screen.dart';
 import 'package:chalo_milte_hai/utils/colors.dart';
@@ -21,16 +22,27 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Meeting App',
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: backgroundColor,
-      ),
-      routes: {
-        '/login': (context) => const LoginScreen(),
-        '/home': (context) => const HomeScreen(),
-      },
-      home: const LoginScreen(),
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Meeting App',
+        theme: ThemeData.dark().copyWith(
+          scaffoldBackgroundColor: backgroundColor,
+        ),
+        routes: {
+          '/login': (context) => const LoginScreen(),
+          '/home': (context) => const HomeScreen(),
+        },
+        home: StreamBuilder(
+            stream: AuthMethods().authChanges,
+            builder: (context, snapshot) {
+              if (snapshot.connectionState == ConnectionState.waiting) {
+                return const Center(
+                  child: CircularProgressIndicator(),
+                );
+              }
+              if (snapshot.hasData) {
+                return const HomeScreen();
+              }
+              return const LoginScreen();
+            }));
   }
 }
