@@ -4,9 +4,12 @@ import 'package:flutter/material.dart';
 class HomeMeetingButton extends StatelessWidget {
   final VoidCallback onPressed;
   final IconData icon;
-  final String text,
+  final String text;
   const HomeMeetingButton(
-      {super.key, required this.onPressed, required this.icon,required this.text});
+      {super.key,
+      required this.onPressed,
+      required this.icon,
+      required this.text});
 
   @override
   Widget build(BuildContext context) {

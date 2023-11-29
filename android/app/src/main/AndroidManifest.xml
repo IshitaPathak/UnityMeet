@@ -1,5 +1,7 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <application
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.chalo_milte_hai">
+    <application tools:replace="android:label"
         android:label="chalo_milte_hai"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
