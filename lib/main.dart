@@ -1,7 +1,7 @@
 import 'package:chalo_milte_hai/resources/auth_method.dart';
 import 'package:chalo_milte_hai/screens/home_screen.dart';
 import 'package:chalo_milte_hai/screens/login_screen.dart';
-// import 'package:chalo_milte_hai/screens/vedio_call_screen.dart';
+import 'package:chalo_milte_hai/screens/vedio_call_screen.dart';
 import 'package:chalo_milte_hai/utils/colors.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         routes: {
           '/login': (context) => const LoginScreen(),
           '/home': (context) => const HomeScreen(),
-          // '/video-call': (context) => const VedioCallScreen(),
+          '/video-call': (context) => const VideoCallScreen(),
         },
         home: StreamBuilder(
             stream: AuthMethods().authChanges,
