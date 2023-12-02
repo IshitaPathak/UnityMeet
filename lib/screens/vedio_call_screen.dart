@@ -64,7 +64,7 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
               controller: meetingIdController,
               maxLines: 1,
               textAlign: TextAlign.center,
-              keyboardType: TextInputType.number,
+              keyboardType: TextInputType.emailAddress,
               decoration: const InputDecoration(
                   fillColor: secondaryBackgroundColor,
                   filled: true,
@@ -102,17 +102,17 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
               isMute: isAudioMuted,
               onChange: onAudioMuted),
           MeetingOptions(
-              text: 'Turn off my video',
-              isMute: isAudioMuted,
+              text: ' Turn off my video',
+              isMute: isVideoMuted,
               onChange: onVideoMuted),
         ],
       ),
     );
   }
 
-  onAudioMuted(bool? val) {
+  onAudioMuted(bool? val1) {
     setState(() {
-      isAudioMuted = val!;
+      isAudioMuted = val1!;
     });
   }
 

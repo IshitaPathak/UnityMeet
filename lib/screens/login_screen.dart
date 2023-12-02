@@ -18,12 +18,12 @@ class _LoginScreenState extends State<LoginScreen> {
         body: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(
+        const Text(
           'Start or join a meeting',
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         // Image.asset('assets/images/onboarding.jpg'),
-        Padding(
+        const Padding(
           padding: EdgeInsets.symmetric(vertical: 40),
           child: Image(image: AssetImage('assets/images/onboarding.jpg')),
         ),
@@ -32,6 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
           onPressed: () async {
             bool res = await _authMethods.signInWithGoogle(context);
             if (res) {
+              // ignore: use_build_context_synchronously
               Navigator.pushNamed(context, '/home');
             }
           },

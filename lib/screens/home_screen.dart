@@ -1,6 +1,8 @@
+import 'package:chalo_milte_hai/resources/auth_method.dart';
 import 'package:chalo_milte_hai/screens/history_meeting_screen.dart';
 import 'package:chalo_milte_hai/screens/meeting_screen.dart';
 import 'package:chalo_milte_hai/utils/colors.dart';
+import 'package:chalo_milte_hai/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,6 +13,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  // final AuthMethods _authMethods = AuthMethods();
   int _page = 0;
   onPageChanged(int page) {
     setState(() {
@@ -22,7 +25,8 @@ class _HomeScreenState extends State<HomeScreen> {
     MeetingScreen(),
     const HistoryMeetingScreen(),
     const Text('contacts'),
-    const Text('setting')
+    // const Text('setting'),
+    CustomButton(text: 'Log Out', onPressed: () => AuthMethods().signOut()),
   ];
 
   @override

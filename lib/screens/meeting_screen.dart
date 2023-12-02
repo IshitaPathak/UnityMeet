@@ -29,7 +29,7 @@ class MeetingScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             HomeMeetingButton(
-                onPressed: () => createNewMeeting,
+                onPressed: createNewMeeting,
                 text: 'New Meeting',
                 icon: Icons.videocam),
             HomeMeetingButton(
@@ -47,9 +47,11 @@ class MeetingScreen extends StatelessWidget {
         const Expanded(
           child: Center(
               child: Center(
-            child: Text(
-              'Create/Join meetings with just a click',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            child: Center(
+              child: Text(
+                'Create/Join meetings with just a click',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              ),
             ),
           )),
         )
