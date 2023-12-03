@@ -1,4 +1,4 @@
-<p align='center'><img src="https://github.com/IshitaPathak/UnityMeet/assets/75848598/69bd75f0-da3e-410c-b87e-982a646faeea" alt="Logo" width="250"  /></p>
+<p align='center'><img src="https://github.com/IshitaPathak/UnityMeet/assets/75848598/69bd75f0-da3e-410c-b87e-982a646faeea" alt="Logo" width="200"  /></p>
 <h1 align='center'>  UnityMeet</h1>
 <p align='center'>
 An application built using Flutter, Firebase, and Jitsi Meet plugin, this app facilitates smooth and secure virtual meetings. Flutter ensures a responsive interface, Firebase handles secure Google authentication
